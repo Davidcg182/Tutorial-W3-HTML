@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Titulo de pestaña y  -->
+    <title rel="icon" href="iconomundo.png">ensayo</title>
+
+    <!-- Metadatos -->
+    <meta charset="UTF-8"> <!-- Tipo de caracteres usados en la pagina -->
+    <meta name="keywords" content="HTML, tutorial"> <!-- Palabras clave (util para el SEO) -->
+    <meta name="description" content="Free Web tutorials"> <!-- Descipcion pagina (util para el SEO) -->
+    <meta name="author" content="David Castillejo"> <!-- Autor -->
+    <!-- <meta http-equiv="refresh" content="30"> Refresca la pagina cada "x" segundos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <meta property="og:image" content="url"> <!-- ver img al compartir link de la pag -->
+    <meta name="og:title" content="titulo"> <!-- ver titulo al compartir link de la pag -->
+    <base> <!-- define una URL base por default para los href y src de la pagina -->
+    <script></script> <!-- Texto general de JS -->
+
+    <!-- Estilos pata tablas -->
+    <style>
+        .simpleBorder {
+            border: 1px solid black;
+        }
+
+        .collapseBorder {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .cebra:nth-child(even) {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: aqua;
+        }
+
+        .collapseHover:hover {
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Encabezados -->
+    <h1 id="h1">Encabezado h1</h1>
+    <h2>Encabezado h2</h2>
+    <h3>Encabezado h3</h3>
+    <h4>Encabezado h4</h4>
+    <h5>Encabezado h5</h5>
+    <h6>Encabezado h6</h6>
+    <!-- Header con style -->
+    <h6 style="color: blue; font-size: 20px;">Encabezado h6 modificado con atributo style</h6>
+
+    <!-- Parrafos -->
+    <hr>
+    <h1>Parrafos HTML</h1>
+    <p>Parrafo simple</p>
+    <P>parrafo con <br> salto de linea </P>
+    <p>parrafo con
+        <hr> horizontal rule
+    </p>
+    <pre>
+hola texto
+como poema con
+tag pre
+</pre>
+
+    <!-- Formatos de texto -->
+    <hr>
+    <h1>formatos de texto HTML</h1>
+    <p>Formato de texto <b>negrita</b> y formato <strong>strong</strong></p>
+    <p>Formato de texto <i>cursiva</i> y formato <em>enfatizado</em></p>
+    <p>Formato de texto <mark>marcado</mark></p>
+    <p>Formato de texto <small>pequeño</small></p>
+    <p>Formato de texto <del>texto eliminado</del></p>
+    <p>Formato de texto <ins>subrayado</ins></p>
+    <p>Formato de texto<sub>sub indice</sub></p>
+    <p>Formato de texto <sup>super indice</sup></p>
+
+    <!-- Citaciones o "Quotes" -->
+    <hr>
+    <h1>citaciones HTML</h1>
+    <blockquote cite="tutorial w3school"> Texto citado en bloque </blockquote>
+    <q>pequeña citacion</q>
+    <br>
+    <abbr title="Hiper Text Markup Language">Texto Abrebiado HTML</abbr>
+    <address>Tag addres para direcciones e info general de autor</address>
+    <cite>tag cite para obras o trabajos</cite>
+    <br>
+    <bdo dir="rtl">tag bdo para mostrar texto al reves</bdo>
+
+    <!-- Links -->
+    <hr>
+    <h1>links HTML</h1>
+    <br>
+    <br>
+    <br>
+    <a href="https://www.google.com/"> Ejemplo link google simple (target _self por default)</a>
+    <br>
+    <a href="https://www.google.com/" target="_blank"> Ejemplo link google target _blank</a>
+    <br>
+    <a href="https://www.google.com/" target="_parent"> Ejemplo link google target _parent</a>
+    <br>
+    <a href="https://www.google.com/" target="_top"> Ejemplo link google target _top</a>
+    <br>
+    <a href="https://www.google.com/" target="_blank">
+        <img src="linkImagen.png" />
+    </a>
+    <br>
+    <a href="mailto:davidcasti182@hotmail.com"> enviar correo </a>
+    <br>
+    <a href="https://www.google.com/" target="_parent" style="text-decoration: none;"
+        title="style='text-decoration: none;'">
+        Ejemplo link sin subrayado y con atributo title
+    </a>
+    <br>
+    <a href="#h1" target="_top"> Ejemplo book-mark (go to encabezado h1)</a>
+
+    <!-- Imagenes -->
+    <hr>
+    <h1>imagenes HTML</h1>
+    <p>
+        <img style="float: left; width: 60px; height: 60px;" src="iconomundo.png" />
+        Tag imagen alineado con texto con float, width y heigth en style
+    </p>
+    <br>
+    <br>
+
+    <p>Mapeo de imagen</p>
+    <img src="iconomundo.png" style="width: 300px; height: 300px;" usemap="#mapamundi">
+    <map name="mapamundi">
+        <area shape="circle" coords="70, 107, 50" alt="link suramerica"
+            href="https://www.google.com/maps/@-21.6512892,-48.4913848,3.67z" target="_blank">
+        <area shape="circle" coords="166, 78, 40" alt="link africa"
+            href="https://www.google.com/maps/@11.6587054,50.8250215,3z" target="_blank">
+    </map>
+
+    <p style="background-image: url(iconomundo.png); height: 50px; background-repeat: no-repeat;">Este parrafo tiene
+        imagen de fondo</p>
+
+    <p>Picture de imagen, cambia en tamaños menos de 300, 300 a 600, 600 o mas</p>
+    <picture>
+        <source media="(min-width: 600px)" srcset="linkImagen.png">
+        <source media="(min-width: 300px)" srcset="iconomundo.png">
+        <img src="img_girl.jpg" alt="otra imagen">
+    </picture>
+
+
+    <!-- Tablas -->
+    <hr>
+    <h1>tablas HTML</h1>
+
+    <table>
+        <caption>Tabla simple</caption>
+        <tr>
+            <th>esta</th>
+            <th>tabla</th>
+            <th>es</th>
+            <th>simple</th>
+        </tr>
+        <tr>
+            <td>valor</td>
+            <td>de</td>
+            <td>celda</td>
+            <td>simple</td>
+        </tr>
+    </table>
+
+    <table class="simpleBorder">
+        <caption>Tabla con bordes simples</caption>
+        <tr>
+            <th class="simpleBorder">esta</th>
+            <th class="simpleBorder">tabla</th>
+            <th class="simpleBorder">tiene</th>
+            <th class="simpleBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="simpleBorder">valor</td>
+            <td class="simpleBorder">de</td>
+            <td class="simpleBorder">tabla con</td>
+            <td class="simpleBorder">bordes</td>
+        </tr>
+    </table>
+
+
+    <table class="collapseBorder">
+        <caption>Tabla con bordes colapsados</caption>
+        <tr>
+            <th class="collapseBorder">esta</th>
+            <th class="collapseBorder">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+
+    <table class="collapseBorder" style="width: 500px; height: 200px;">
+        <caption>Tabla con otras dimensiones</caption>
+        <tr style="height: 80px;">
+            <th class="collapseBorder" style="width: 50px;">esta</th>
+            <th class="collapseBorder">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>Tabla con encabezados en filas</caption>
+        <tr>
+            <th class="collapseBorder">esta</th>
+            <td class="collapseBorder">tabla</td>
+            <td class="collapseBorder">tiene</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+        <tr>
+            <th class="collapseBorder">valor</th>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>Tabla con 1 celda ocupa 2 columnas</caption>
+        <tr>
+            <th class="collapseBorder">esta</th>
+            <th class="collapseBorder" colspan="2">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>Tabla con 1 celda ocupa 2 filas</caption>
+        <tr>
+            <th class="collapseBorder">esta</th>
+            <th class="collapseBorder" rowspan="2">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>estilos por columna (colgroup y col)</caption>
+        <colgroup>
+            <col span="2" style="background-color: aqua;">
+            <col span="1" style="background-color: white;">
+            <col span="1" style="background-color: blueviolet;">
+
+        </colgroup>
+        <tr>
+            <th class="collapseBorder">esta</th>
+            <th class="collapseBorder">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr>
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>Tabla tipo cebra (en filas y colmunas)</caption>
+        <tr class="cebra">
+            <th class="cebra">esta</th>
+            <th class="cebra">tabla</th>
+            <th class="cebra">tiene</th>
+            <th class="cebra">bordes</th>
+        </tr>
+        <tr class="cebra">
+            <td class="cebra">valor</td>
+            <td class="cebra">de</td>
+            <td class="cebra">tabla con</td>
+            <td class="cebra">bordes</td>
+        </tr>
+        <tr class="cebra">
+            <td class="cebra">valor</td>
+            <td class="cebra">de</td>
+            <td class="cebra">tabla con</td>
+            <td class="cebra">bordes</td>
+        </tr>
+    </table>
+
+    <table class="collapseBorder">
+        <caption>Tabla efecto seleccion de fila (hover en fila)</caption>
+        <tr class="collapseHover">
+            <th class="collapseBorder">esta</th>
+            <th class="collapseBorder">tabla</th>
+            <th class="collapseBorder">tiene</th>
+            <th class="collapseBorder">bordes</th>
+        </tr>
+        <tr class="collapseHover">
+            <td class="collapseBorder">valor</td>
+            <td class="collapseBorder">de</td>
+            <td class="collapseBorder">tabla con</td>
+            <td class="collapseBorder">bordes</td>
+        </tr>
+    </table>
+
+    <!-- Listas -->
+    <hr>
+    <h1>listas HTML</h1>
+
+    <ul>
+        <li> lista desordenada</li>
+        <li> con elementos</li>
+        <li> tipo default (disc)</li>
+    </ul>
+
+    <ul type="circle">
+        <li> lista desordenada</li>
+        <li> con elementos</li>
+        <li> tipo circle</li>
+    </ul>
+
+    <ul type="square">
+        <li> lista desordenada</li>
+        <li> con elementos</li>
+        <li> tipo circle</li>
+    </ul>
+
+    <ul type="none">
+        <li> lista desordenada</li>
+        <li> sin tipo</li>
+        <li> de elemento</li>
+    </ul>
+
+    <ol>
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo default (numerico)</li>
+    </ol>
+
+    <ol start="15">
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo default (numerico)</li>
+        <li> iniciando en 15</li>
+    </ol>
+
+    <ol type="A">
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo letras mayusculas</li>
+    </ol>
+
+    <ol type="a">
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo letras minusculas</li>
+    </ol>
+
+    <ol type="I">
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo letras romanas mayusculas</li>
+    </ol>
+
+    <ol type="i">
+        <li> lista ordenada</li>
+        <li> con elementos</li>
+        <li> tipo letras romanas minusculas</li>
+    </ol>
+
+    <dl>
+        <dt>Lista descriptiva</dt>
+        <dd>Descripcion 1</dd>
+        <dt>Lista descriptiva</dt>
+        <dd>Descripcion 2</dd>
+    </dl>
+
+    <!-- iframe -->
+    <hr>
+    <h1>iframe HTML</h1>
+    <p>iframe de pagina web</p>
+    <iframe src="https://www.youtube.com/embed/tA-_vAz9y78" title="📚 Curso de Next.js 13 desde cero"
+        allowfullscreen></iframe>
+
+    <p>Iframe con link</p>
+    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="iframe">Link para ver pagina web</a>
+    <iframe name="iframe"></iframe>
+
+
+    <!-- Layout elements -->
+    <hr>
+    <h1>layout HTML</h1>
+    <head>layout head tag</head>
+    <nav>
+        <a>Links en </a>
+        <a>Nav tag</a>
+    </nav>
+    <section>section tag</section>
+    <article>article tag</article>
+    <aside>aside tag</aside>
+    <footer>footer tag</footer>
+    <details>
+        <summary>summary de tag details</summary>
+        <p>descripcion de tag details con tag p simple</p>
+    </details>
+
+    <figure>
+        <img src="iconomundo.png" style="width: 300px; height: 300px;">
+        <figcaption>Imagen en segmento figure tag con descripcion de imagen en tag figcaption</figcaption>
+    </figure>
+
+    <!-- Formularios -->
+    <hr>
+    <h1>formularios HTML</h1>
+    <form>
+        <label>input types en formulario</label>
+        <input type="text" placeholder="input type text" name="text" value="text">
+        <input type="password" placeholder="input type password" name="password" value="password">
+        <input type="submit" placeholder="input type submit" name="submit" value="submit">
+        <input type="reset" placeholder="input type reset" name="reset" value="reset">
+        <input type="radio" placeholder="input type radio" name="radio" value="radio">
+        <input type="checkbox" placeholder="input type checkbox" name="checkbox" value="checkbox">
+        <input type="button" placeholder="input type button" name="button" value="button">
+        <input type="color" placeholder="input type color" name="color" value="color">
+        <input type="date" placeholder="input type date" name="date" value="date">
+        <input type="datetime-local" placeholder="input type datetime-local" name="datetime-local"
+            value="datetime-local">
+        <input type="email" placeholder="input type email" name="email" value="email">
+        <input type="image" placeholder="input type image" name="image" value="image">
+        <input type="file" placeholder="input type file" name="file" value="file">
+        <input type="hidden" placeholder="input type hidden" name="hidden" value="hidden">
+        <input type="month" placeholder="input type month" name="month" value="month">
+        <input type="number" placeholder="input type number" name="number" value="number">
+        <input type="range" placeholder="input type range" name="range" value="range">
+        <input type="search" placeholder="input type search" name="search" value="search">
+        <input type="tel" placeholder="input type tel" name="tel" value="tel">
+        <input type="time" placeholder="input type time" name="time" value="time">
+        <input type="url" placeholder="input type url" name="url" value="url">
+        <input type="week" placeholder="input type week" name="week" value="week">
+    </form>
+
+    <form>
+        <label>input atributos type, placeholder, name, value, readonly</label>
+        <input type="text" placeholder="input type text" name="text" value="text" readonly>
+        <label>input atributos disabled, size</label>
+        <input type="text" value="text" disabled size="80px;">
+        <label>input atributos maxlength, required, autocomplete, autofocus</label>
+        <input type="text" placeholder="input type text" name="text" value="text" maxlength="5" required
+            autocomplete="on" autofocus>
+        <label>input atributos min, max, step</label>
+        <input type="range" min="5" max="30" step="5">
+        <label>input atributos width y height en type image (imagen como submit)</label>
+        <input type="image" width="50px" height="50px">
+        <label>input atributos list con elementos datalist y option </label>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <label>input atributos multiple (permite seleccionar varios archivos) </label>
+        <input type="file" multiple>
+        <label>elemento label</label>
+        <select>
+            <option>elementos</option>
+            <option>select y</option>
+            <option>option</option>
+        </select>
+        <textarea>Elemento text area</textarea>
+        <button>elemento button</button>
+        <fieldset>
+            <legend>Titulo de elemento fieldset</legend>
+            <input type="text" placeholder="inputs  ">
+            <input type="text" placeholder="agrupados en">
+            <input type="text" placeholder="fiel set element">
+        </fieldset>
+    </form>
+
+    <!-- Elementos multimedia -->
+    <hr>
+    <h1>Multimedia HTML</h1>
+    <p>Elementos multimedia</p>
+    <p>Tag audio con atributos controls y muted; con elemento source anidado y este con atributos src y type</p>
+    <audio controls  muted >
+        <source src="./Yasuharu Takanashi - Aikouhenno.mp3" type="audio/mp3">
+    </audio>
+    <p>Tag video con atributos controls, muted, autoplay, width y height; con elemento source anidado y este con atributos src y type</p>
+    <video controls  muted autoplay width="500px" height="500px" >
+        <source src="./💻 _ General _ HenryTech - Discord 2022-11-23 10-08-51.mp4" type="video/mp4">
+    </video>
+    
+
+
+
+
+</body>
+
+</html>
